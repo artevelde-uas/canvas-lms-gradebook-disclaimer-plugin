@@ -27,6 +27,13 @@ canvas.addPlugin(gradebookDisclaimerPlugin, {
 canvas.run();
 ```
 
+##Options##
+
+  * **message**: The message to appear in the flash box.
+  * **modalLink**: [optional] The label of the link that will open the modal window.
+  * **modalTitle**: [optional] The title of the modal window.
+  * **modalText**: [optional] The text in the body of the modal window.
+
 ## Building
 
 This plug-in uses React so it has to be compiled into JavaScript:

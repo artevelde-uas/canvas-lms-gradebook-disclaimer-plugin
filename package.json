@@ -1,6 +1,6 @@
 {
   "name": "@ahsdile/canvas-lms-gradebook-disclaimer-plugin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Plugin for the Canvas LMS theme app that adds a disclaimer on the gradebook page",
   "keywords": ["Canvas LMS"],
   "license": "MIT",
@@ -10,9 +10,12 @@
   "files": [
     "dist/index.js",
     "dist/Flash.js",
+    "dist/Modal.js",
     "dist/index.css"
   ],
   "dependencies": {
+    "@instructure/ui-elements": "^5.15.0",
+    "@instructure/ui-overlays": "^5.15.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
