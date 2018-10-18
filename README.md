@@ -26,3 +26,13 @@ canvas.addPlugin(gradebookDisclaimerPlugin, {
 
 canvas.run();
 ```
+
+## Building
+
+This plug-in uses React so it has to be compiled into JavaScript:
+
+    npm run build
+
+or:
+
+    yarn build
