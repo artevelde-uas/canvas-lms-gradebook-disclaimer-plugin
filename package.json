@@ -1,6 +1,6 @@
 {
   "name": "@ahsdile/canvas-lms-gradebook-disclaimer-plugin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Plugin for the Canvas LMS theme app that adds a disclaimer on the gradebook page",
   "keywords": ["Canvas LMS"],
   "license": "MIT",

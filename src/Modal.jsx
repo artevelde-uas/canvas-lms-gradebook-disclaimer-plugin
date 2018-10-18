@@ -39,7 +39,7 @@ export default class extends React.Component {
                         >
                             Close
                         </CloseButton>
-                        <Heading>{this.props.title}</Heading>
+                        <Heading>{this.props.title || '\u00a0'}</Heading>
                     </ModalHeader>
                     <ModalBody>
                         {this.props.text}
