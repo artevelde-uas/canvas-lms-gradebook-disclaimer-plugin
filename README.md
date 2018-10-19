@@ -27,6 +27,34 @@ canvas.addPlugin(gradebookDisclaimerPlugin, {
 canvas.run();
 ```
 
+You can also create a new local plug-in and extend the gradebook disclaimer:
+
+```javascript
+import gradebookDisclaimerPlugin from '@ahsdile/canvas-lms-gradebook-disclaimer-plugin';
+
+export default function (app) {
+    gradebookDisclaimerPlugin(app, {
+        message: 'Canvas marks that count as final grade are indicative partial grades.',
+        modalTitle: 'Indicative partial grade',
+        modalText: `
+            <blockquote>
+                <p>An indicative partial grade is a grade that indicates the extent to which the student has acquired competences of a course unit or parts thereof. The indicative partial grade is preliminary data with a view to support, remediation opportunities and promoting the study progress.</p>
+                <footer>
+                    <cite>&mdash; <a href="https://example.org/student/studycontract.pdf">
+                        Student Study Contract</a></cite>
+                </footer>
+            </blockquote>
+        `
+    });
+}
+```
+
+Then import it like this:
+
+```javascript
+import myDisclaimerPlugin from './plugins/myDisclaimerPlugin';
+```
+
 ##Options##
 
   * **message**: The message to appear in the flash box.
@@ -36,10 +64,12 @@ canvas.run();
 
 ## Building
 
-This plug-in uses React so it has to be compiled into JavaScript:
+This plug-in uses React so if you intend to modify the source, it has to be compiled into JavaScript:
 
     npm run build
 
 or:
 
     yarn build
+
+**Note:** If you are just using the plug-in it will automatically use the compiled scripts in the *dist* folder
