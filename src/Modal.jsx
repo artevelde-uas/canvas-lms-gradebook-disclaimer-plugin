@@ -42,7 +42,7 @@ export default class extends React.Component {
                         <Heading>{this.props.title || '\u00a0'}</Heading>
                     </ModalHeader>
                     <ModalBody>
-                        {this.props.text}
+                        <div dangerouslySetInnerHTML={{ __html: this.props.text}}></div>
                     </ModalBody>
                 </Modal>
                 {React.Children.map(this.props.children, child =>
