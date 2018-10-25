@@ -20,7 +20,7 @@
     "react-dom": "^16.4.1"
   },
   "peerDependencies": {
-    "@ahsdile/canvas-lms-app": "^0.4.0"
+    "@ahsdile/canvas-lms-app": "^0.5.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
