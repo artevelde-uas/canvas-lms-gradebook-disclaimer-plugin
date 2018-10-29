@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Flash from './Flash';
 
-import './index.css';
-
 
 export default function (app, options) {
     app.addRouteListener(['course.gradebook', 'course.grades'], function () {
