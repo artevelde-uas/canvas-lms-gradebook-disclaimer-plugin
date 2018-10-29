@@ -6,17 +6,15 @@ import Modal from './Modal';
 
 export default function (props) {
     return (
-        <div>
-            <div id='gradebook-disclaimer__flash' className='ic-flash-info'>
-                <div className='ic-flash__icon' aria-hidden='true'>
-                    <i className='icon-info'></i>
-                </div>
-                {props.options.message} {props.options.modalText &&
-                    <Modal title={props.options.modalTitle} text={props.options.modalText}>
-                        <Link>{props.options.modalLink || 'More info...'}</Link>
-                    </Modal>
-                }
+        <div id='gradebook-disclaimer__flash' className='ic-flash-info'>
+            <div className='ic-flash__icon' aria-hidden='true'>
+                <i className='icon-info'></i>
             </div>
+            {props.options.message} {props.options.modalText &&
+                <Modal title={props.options.modalTitle} text={props.options.modalText}>
+                    <Link>{props.options.modalLink || 'More info...'}</Link>
+                </Modal>
+            }
         </div>
     );
 };
