@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Link from '@instructure/ui-elements/lib/components/Link';
+import { Link } from '@instructure/ui-link'
 import Modal from './Modal';
 
 import styles from './index.module.css';

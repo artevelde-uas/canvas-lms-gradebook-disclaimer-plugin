@@ -13,10 +13,6 @@
   "files": [
     "src/"
   ],
-  "dependencies": {
-    "@instructure/ui-elements": "^5.15.0",
-    "@instructure/ui-overlays": "^5.15.0",
-  },
   "peerDependencies": {
     "@artevelde-uas/canvas-lms-app": "^1.4.3",
     "react": "^17.0.2"
