@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
+import { Link } from '@instructure/ui-link'
 import { Modal } from '@instructure/ui-modal';
 import { CloseButton } from '@instructure/ui-buttons/';
 import { Heading } from '@instructure/ui-heading'
 
 
-export default ({ children, title, text }) => {
+export default ({ children, link, title, text }) => {
     const [open, setOpen] = useState(false);
+
+    function handleOpen() {
+        setOpen(true);
+    }
 
     function handleClose() {
         setOpen(false);
@@ -13,6 +18,7 @@ export default ({ children, title, text }) => {
 
     return (
         <span>
+            <Link onClick={handleOpen}>{link}</Link>
             <Modal
                 open={open}
                 onDismiss={handleClose}
@@ -35,15 +41,6 @@ export default ({ children, title, text }) => {
                     <div dangerouslySetInnerHTML={{ __html: text }}></div>
                 </Modal.Body>
             </Modal>
-            {React.Children.map(children, child =>
-                React.cloneElement(child, {
-                    onClick: (...args) => {
-                        if (child.props.onClick) child.props.onClick(...args);
-
-                        setOpen(true);
-                    }
-                })
-            )}
         </span>
     );
 };
