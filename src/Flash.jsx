@@ -11,7 +11,9 @@ export default function (props) {
                 <i className='icon-info'></i>
             </div>
             {props.options.message} {props.options.modalText &&
-                <Modal title={props.options.modalTitle} text={props.options.modalText} link={props.options.modalLink || 'More info...'} />
+                <Modal title={props.options.modalTitle} link={props.options.modalLink || 'More info...'}>
+                    {props.options.modalText}
+                </Modal>
             }
         </div>
     );

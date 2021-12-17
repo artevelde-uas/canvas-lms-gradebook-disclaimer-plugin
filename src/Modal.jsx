@@ -5,7 +5,7 @@ import { CloseButton } from '@instructure/ui-buttons/';
 import { Heading } from '@instructure/ui-heading'
 
 
-export default ({ children, link, title, text }) => {
+export default ({ children, link, title }) => {
     const [open, setOpen] = useState(false);
 
     function handleOpen() {
@@ -39,7 +39,7 @@ export default ({ children, link, title, text }) => {
                     <Heading>{title || '\u00a0'}</Heading>
                 </Modal.Header>
                 <Modal.Body>
-                    <div dangerouslySetInnerHTML={{ __html: text }}></div>
+                    <div dangerouslySetInnerHTML={{ __html: children }}></div>
                 </Modal.Body>
             </Modal>
         </span>
