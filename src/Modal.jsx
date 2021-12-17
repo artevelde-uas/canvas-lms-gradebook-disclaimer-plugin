@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Modal, { ModalHeader, ModalBody } from '@instructure/ui-overlays/lib/components/Modal';
-import CloseButton from '@instructure/ui-buttons/lib/components/CloseButton';
-import Heading from '@instructure/ui-elements/lib/components/Heading';
+import { Modal } from '@instructure/ui-modal';
+import { CloseButton } from '@instructure/ui-buttons/';
+import { Heading } from '@instructure/ui-heading'
 
 
 export default class extends React.Component {
@@ -30,7 +29,7 @@ export default class extends React.Component {
                     label={this.props.title}
                     shouldCloseOnDocumentClick
                 >
-                    <ModalHeader>
+                    <Modal.Header>
                         <CloseButton
                             placement='end'
                             offset='medium'
@@ -40,10 +39,10 @@ export default class extends React.Component {
                             Close
                         </CloseButton>
                         <Heading>{this.props.title || '\u00a0'}</Heading>
-                    </ModalHeader>
-                    <ModalBody>
+                    </Modal.Header>
+                    <Modal.Body>
                         <div dangerouslySetInnerHTML={{ __html: this.props.text}}></div>
-                    </ModalBody>
+                    </Modal.Body>
                 </Modal>
                 {React.Children.map(this.props.children, child =>
                     React.cloneElement(child, {
