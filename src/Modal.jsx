@@ -8,20 +8,12 @@ import { Heading } from '@instructure/ui-heading'
 export default ({ children, link, title }) => {
     const [open, setOpen] = useState(false);
 
-    function handleOpen() {
-        setOpen(true);
-    }
-
-    function handleClose() {
-        setOpen(false);
-    }
-
     return (
         <span>
-            <Link onClick={handleOpen}>{link}</Link>
+            <Link onClick={() => { setOpen(true) }}>{link}</Link>
             <Modal
                 open={open}
-                onDismiss={handleClose}
+                onDismiss={() => { setOpen(false) }}
                 size='medium'
                 label={title}
                 shouldCloseOnDocumentClick
@@ -31,7 +23,7 @@ export default ({ children, link, title }) => {
                         placement='end'
                         offset='medium'
                         variant='icon'
-                        onClick={handleClose}
+                        onClick={() => { setOpen(false) }}
                         screenReaderLabel='Close'
                     >
                         Close
