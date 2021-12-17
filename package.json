@@ -1,6 +1,6 @@
 {
   "name": "@artevelde-uas/canvas-lms-gradebook-disclaimer-plugin",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Adds a disclaimer on the gradebook page",
   "keywords": [
     "Canvas LMS"
