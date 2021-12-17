@@ -9,12 +9,9 @@
     "type": "git",
     "url": "https://github.com/artevelde-uas/canvas-lms-gradebook-disclaimer-plugin.git"
   },
-  "module": "dist/index.js",
+  "module": "src/index.jsx",
   "files": [
-    "dist/index.js",
-    "dist/Flash.js",
-    "dist/Modal.js",
-    "dist/index.css"
+    "src/"
   ],
   "dependencies": {
     "@instructure/ui-elements": "^5.15.0",
@@ -24,14 +21,5 @@
   },
   "peerDependencies": {
     "@ahsdile/canvas-lms-app": "^0.7.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/preset-react": "^7.0.0"
-  },
-  "scripts": {
-    "build": "babel src --out-dir dist --copy-files --presets=@babel/preset-react",
-    "prepare": "npm run build"
   }
 }

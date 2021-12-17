@@ -61,15 +61,3 @@ import myDisclaimerPlugin from './plugins/myDisclaimerPlugin';
   * **modalLink**: [optional] The label of the link that will open the modal window.
   * **modalTitle**: [optional] The title of the modal window.
   * **modalText**: [optional] The text in the body of the modal window.
-
-## Building
-
-This plug-in uses React so if you intend to modify the source, it has to be compiled into JavaScript:
-
-    npm run build
-
-or:
-
-    yarn build
-
-**Note:** If you are just using the plug-in it will automatically use the compiled scripts in the *dist* folder
