@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Link from '@instructure/ui-elements/lib/components/Link';
 import Modal from './Modal';
 
-import styles from './index.css';
+import styles from './index.module.css';
 
 
 export default function (props) {
