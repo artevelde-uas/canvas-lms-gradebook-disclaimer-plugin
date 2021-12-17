@@ -18,7 +18,7 @@
     "@instructure/ui-overlays": "^5.15.0",
   },
   "peerDependencies": {
-    "@ahsdile/canvas-lms-app": "^0.7.0"
+    "@artevelde-uas/canvas-lms-app": "^1.4.3",
     "react": "^17.0.2"
   }
 }

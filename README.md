@@ -17,14 +17,14 @@ Using Yarn:
 Just import the plug-in and add it to the Canvas app:
 
 ```javascript
-import canvas from '@ahsdile/canvas-lms-app';
+import { run, addPlugin } from '@ahsdile/canvas-lms-app';
 import gradebookDisclaimerPlugin from '@artevelde-uas/canvas-lms-gradebook-disclaimer-plugin';
 
-canvas.addPlugin(gradebookDisclaimerPlugin, {
+addPlugin(gradebookDisclaimerPlugin, {
     message: 'This is a disclaimer!'
 });
 
-canvas.run();
+run();
 ```
 
 You can also create a new local plug-in and extend the gradebook disclaimer:
