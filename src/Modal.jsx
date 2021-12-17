@@ -32,6 +32,7 @@ export default ({ children, link, title, text }) => {
                         offset='medium'
                         variant='icon'
                         onClick={handleClose}
+                        screenReaderLabel='Close'
                     >
                         Close
                     </CloseButton>
