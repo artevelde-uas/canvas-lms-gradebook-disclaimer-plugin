@@ -16,7 +16,7 @@ export default function (options) {
 
         const container = document.createElement('div');
 
-        el.parentNode.insertBefore(container, el.nextSibling);
+        appCrumbs.after(container);
         ReactDOM.render(React.createElement(Flash, { options }), container);
     });
 }
