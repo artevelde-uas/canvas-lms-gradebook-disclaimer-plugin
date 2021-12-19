@@ -17,6 +17,6 @@ export default function (options) {
         let container = document.createElement('div');
 
         el.parentNode.insertBefore(container, el.nextSibling);
-        ReactDOM.render(<Flash options={options} />, container);
+        ReactDOM.render(React.createElement(Flash, { options }), container);
     });
 }
