@@ -1,59 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from '@instructure/ui-link'
 import { Modal } from '@instructure/ui-modal';
 import { CloseButton } from '@instructure/ui-buttons/';
 import { Heading } from '@instructure/ui-heading'
 
 
-export default class extends React.Component {
-    
-    constructor (props) {
-        super(props);
+export default ({ children, link, title }) => {
+    const [open, setOpen] = useState(false);
 
-        this.state = {
-            open: false,
-            size: 'auto'
-        };
-    }
-    
-    handleClose() {
-        this.setState({ open: false });
-    }
-    
-    render () {
-        return (
-            <span>
-                <Modal
-                    open={this.state.open}
-                    onDismiss={this.handleClose.bind(this)}
-                    size='medium'
-                    label={this.props.title}
-                    shouldCloseOnDocumentClick
-                >
-                    <Modal.Header>
-                        <CloseButton
-                            placement='end'
-                            offset='medium'
-                            variant='icon'
-                            onClick={this.handleClose.bind(this)}
-                        >
-                            Close
-                        </CloseButton>
-                        <Heading>{this.props.title || '\u00a0'}</Heading>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <div dangerouslySetInnerHTML={{ __html: this.props.text}}></div>
-                    </Modal.Body>
-                </Modal>
-                {React.Children.map(this.props.children, child =>
-                    React.cloneElement(child, {
-                        onClick: (...args) => {
-                            if (child.props.onClick) child.props.onClick(...args);
-                            this.setState({ open: true });
-                        }
-                    })
-                )}
-            </span>
-        );
-    }
+    return (
+        <span>
+            <Link onClick={() => { setOpen(true) }}>{link}</Link>
+            <Modal
+                open={open}
+                onDismiss={() => { setOpen(false) }}
+                size='medium'
+                label={title}
+                shouldCloseOnDocumentClick
+            >
+                <Modal.Header>
+                    <CloseButton
+                        placement='end'
+                        offset='medium'
+                        variant='icon'
+                        onClick={() => { setOpen(false) }}
+                        screenReaderLabel='Close'
+                    >
+                        Close
+                    </CloseButton>
+                    <Heading>{title || '\u00a0'}</Heading>
+                </Modal.Header>
+                <Modal.Body>
+                    <div dangerouslySetInnerHTML={{ __html: children }}></div>
+                </Modal.Body>
+            </Modal>
+        </span>
+    );
 };
 

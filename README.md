@@ -55,7 +55,7 @@ Then import it like this:
 import myDisclaimerPlugin from './plugins/myDisclaimerPlugin';
 ```
 
-##Options##
+### Options
 
   * **message**: The message to appear in the flash box.
   * **modalLink**: [optional] The label of the link that will open the modal window.
