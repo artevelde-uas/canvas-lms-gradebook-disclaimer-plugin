@@ -12,9 +12,9 @@ export default function (options) {
     }
 
     router.onRoute(routes, async () => {
-        const el = await dom.onElementReady('#wrapper > div.ic-app-nav-toggle-and-crumbs > .ic-app-crumbs');
+        const appCrumbs = await dom.onElementReady('#wrapper > div.ic-app-nav-toggle-and-crumbs > .ic-app-crumbs');
 
-        let container = document.createElement('div');
+        const container = document.createElement('div');
 
         el.parentNode.insertBefore(container, el.nextSibling);
         ReactDOM.render(React.createElement(Flash, { options }), container);
