@@ -1,5 +1,7 @@
 import React from 'react';
 import Modal from './Modal';
+import { EmotionThemeProvider } from '@instructure/emotion';
+import { theme } from '@artevelde-uas/canvas-lms-app';
 
 import styles from './index.module.css';
 
@@ -11,9 +13,11 @@ export default function ({ options: { message, modalLink, modalTitle, modalText 
                 <i className='icon-info'></i>
             </div>
             {message} {modalText &&
-                <Modal title={modalTitle} link={modalLink || 'More info...'}>
-                    {modalText}
-                </Modal>
+                <EmotionThemeProvider theme={theme}>
+                    <Modal title={modalTitle} link={modalLink || 'More info...'}>
+                        {modalText}
+                    </Modal>
+                </EmotionThemeProvider>
             }
         </div>
     );
