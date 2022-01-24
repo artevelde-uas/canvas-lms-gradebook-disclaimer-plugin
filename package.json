@@ -16,7 +16,7 @@
     "src/"
   ],
   "peerDependencies": {
-    "@artevelde-uas/canvas-lms-app": "^1.4.3",
+    "@artevelde-uas/canvas-lms-app": "^1.9.0",
     "react": "^17.0.2"
   },
   "config": {
