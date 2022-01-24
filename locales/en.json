@@ -1,4 +1,10 @@
 {
+    "message": "Grades disclaimer.",
+    "modal": {
+        "link": "More info...",
+        "title": "Disclaimer",
+        "text": "The results published on the Canvas gradebook are provisional and only made available for information to the students. They may not be treated as final grades. In case of any discrepancy, the grades mentioned in the Student Information System will be final."
+    },
     "package": {
         "title": "Adds a disclaimer on the gradebook page",
         "description": "Displays a customizable disclaimer pop-up on the gradebook page (and optionally the assignments page) to inform the students of the provisional nature of the grades on Canvas."

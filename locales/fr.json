@@ -1,4 +1,10 @@
 {
+    "message": "Clause de non-responsabilité sur les notes.",
+    "modal": {
+        "link": "Plus d'infos...",
+        "title": "Clause de non-responsabilité",
+        "text": "Les résultats publiés sur le carnet de notes Canvas sont provisoires et ne sont mis à disposition qu'à titre d'information pour les étudiants. Ils ne peuvent pas être considérés comme des notes finales. En cas de divergence, les notes mentionnées dans le système d'information sur les étudiants seront définitives."
+    },
     "package": {
         "title": "Ajoute un avertissement sur la page du carnet de notes",
         "description": "Affiche une fenêtre contextuelle de non-responsabilité personnalisable sur la page du carnet de notes (et éventuellement sur la page des devoirs) pour informer les étudiants de la nature provisoire des notes sur Canvas."

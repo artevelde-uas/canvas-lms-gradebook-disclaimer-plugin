@@ -1,4 +1,10 @@
 {
+    "message": "Cijfers disclaimer.",
+    "modal": {
+        "link": "Meer info...",
+        "title": "Disclaimer",
+        "text": "De resultaten die op de Canvas-cijferlijst worden gepubliceerd, zijn voorlopig en worden alleen ter informatie aan de studenten ter beschikking gesteld. Ze mogen niet als eindcijfers worden beschouwd. Bij discrepantie zijn de cijfers vermeld in het Studenten Informatie Systeem definitief."
+    },
     "package": {
         "title": "Voegt een disclaimer toe aan de cijferlijstpagina",
         "description": "Geeft een aanpasbare disclaimer-pop-up weer op de cijferlijstpagina (en optioneel de opdrachtenpagina) om de studenten te informeren over de voorlopige aard van de cijfers op Canvas."

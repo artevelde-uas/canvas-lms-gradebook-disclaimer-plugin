@@ -1,4 +1,10 @@
 {
+    "message": "Haftungsausschluss für Noten.",
+    "modal": {
+        "link": "Mehr Info...",
+        "title": "Haftungsausschluss",
+        "text": "Die im Canvas-Notenbuch veröffentlichten Ergebnisse sind vorläufig und werden den Studierenden nur zur Information zur Verfügung gestellt. Sie dürfen nicht als Abschlussnoten behandelt werden. Bei Unstimmigkeiten sind die im Studierendeninformationssystem genannten Noten endgültig."
+    },
     "package": {
         "title": "Fügt einen Haftungsausschluss auf der Notenbuchseite hinzu",
         "description": "Zeigt ein anpassbares Haftungsausschluss-Popup auf der Notenbuchseite (und optional auf der Aufgabenseite) an, um die Schüler über den vorläufigen Charakter der Noten auf Canvas zu informieren."
