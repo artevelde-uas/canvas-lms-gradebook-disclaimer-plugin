@@ -1,0 +1,6 @@
+{
+    "package": {
+        "title": "Ajoute un avertissement sur la page du carnet de notes",
+        "description": "Affiche une fenêtre contextuelle de non-responsabilité personnalisable sur la page du carnet de notes (et éventuellement sur la page des devoirs) pour informer les étudiants de la nature provisoire des notes sur Canvas."
+    }
+}

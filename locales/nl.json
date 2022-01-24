@@ -1,0 +1,6 @@
+{
+    "package": {
+        "title": "Voegt een disclaimer toe aan de cijferlijstpagina",
+        "description": "Geeft een aanpasbare disclaimer-pop-up weer op de cijferlijstpagina (en optioneel de opdrachtenpagina) om de studenten te informeren over de voorlopige aard van de cijfers op Canvas."
+    }
+}

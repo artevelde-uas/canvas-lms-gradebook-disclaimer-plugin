@@ -26,4 +26,10 @@ export default function (options) {
         // Render the component
         ReactDOM.render(React.createElement(Flash, { options }), container);
     });
+
+    return {
+        ...require('../package.json'),
+        title: __('package.title'),
+        description: __('package.description')
+    };
 }

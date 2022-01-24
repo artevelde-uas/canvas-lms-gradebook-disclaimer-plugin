@@ -1,0 +1,6 @@
+{
+    "package": {
+        "title": "Fügt einen Haftungsausschluss auf der Notenbuchseite hinzu",
+        "description": "Zeigt ein anpassbares Haftungsausschluss-Popup auf der Notenbuchseite (und optional auf der Aufgabenseite) an, um die Schüler über den vorläufigen Charakter der Noten auf Canvas zu informieren."
+    }
+}
