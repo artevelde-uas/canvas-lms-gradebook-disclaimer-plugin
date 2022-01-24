@@ -2,7 +2,7 @@ import { router, dom } from '@artevelde-uas/canvas-lms-app';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Flash from './Flash';
+import Flash from './components/Flash';
 
 
 export default function (options) {
