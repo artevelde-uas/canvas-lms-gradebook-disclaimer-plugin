@@ -2,14 +2,21 @@ import { router, dom } from '@artevelde-uas/canvas-lms-app';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Flash from './Flash';
+import __ from './i18n';
+import Flash from './components/Flash';
 
 
-export default function (options) {
+export default function ({
+    showOnAssignmentsPage = false,
+    message = __('message'),
+    modalLink = __('modal.link'),
+    modalTitle = __('modal.title'),
+    modalText = __('modal.text')
+}) {
     const routes = ['courses.gradebook', 'courses.grades'];
 
     // Optionally show on assignments page
-    if (options.showOnAssignmentsPage) {
+    if (showOnAssignmentsPage) {
         routes.push('courses.assignments');
     }
 
@@ -24,6 +31,12 @@ export default function (options) {
         appCrumbs.after(container);
 
         // Render the component
-        ReactDOM.render(React.createElement(Flash, { options }), container);
+        ReactDOM.render(React.createElement(Flash, { options: { message, modalLink, modalTitle, modalText } }), container);
     });
+
+    return {
+        ...require('../package.json'),
+        title: __('package.title'),
+        description: __('package.description')
+    };
 }

@@ -3,7 +3,7 @@ import Modal from './Modal';
 import { EmotionThemeProvider } from '@instructure/emotion';
 import { theme } from '@artevelde-uas/canvas-lms-app';
 
-import styles from './index.module.css';
+import styles from '../index.module.css';
 
 
 export default function ({ options: { message, modalLink, modalTitle, modalText } }) {

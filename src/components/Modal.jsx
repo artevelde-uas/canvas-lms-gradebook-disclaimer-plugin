@@ -28,7 +28,7 @@ export default ({ children, link, title }) => {
                     >
                         Close
                     </CloseButton>
-                    <Heading>{title || '\u00a0'}</Heading>
+                    <Heading>{title ? title.toUpperCase() : '\u00a0'}</Heading>
                 </Modal.Header>
                 <Modal.Body>
                     <div dangerouslySetInnerHTML={{ __html: children }}></div>
@@ -37,4 +37,3 @@ export default ({ children, link, title }) => {
         </span>
     );
 };
-
