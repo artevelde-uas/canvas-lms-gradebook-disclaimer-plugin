@@ -2,16 +2,16 @@ import { router, dom } from '@artevelde-uas/canvas-lms-app';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import __ from './i18n';
+import t from './i18n';
 import Flash from './components/Flash';
 
 
 export default function ({
     showOnAssignmentsPage = false,
-    message = __('message'),
-    modalLink = __('modal.link'),
-    modalTitle = __('modal.title'),
-    modalText = __('modal.text')
+    message = t('message'),
+    modalLink = t('modal.link'),
+    modalTitle = t('modal.title'),
+    modalText = t('modal.text')
 }) {
     const routes = ['courses.gradebook', 'courses.grades'];
 
@@ -36,7 +36,7 @@ export default function ({
 
     return {
         ...require('../package.json'),
-        title: __('package.title'),
-        description: __('package.description')
+        title: t('package.title'),
+        description: t('package.description')
     };
 }
